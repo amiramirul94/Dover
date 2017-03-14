@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/profile_picture_image_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/restaurant"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/customer_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@id/profile_picture_image_view"
+        android:layout_alignParentTop="true"
+        android:text="Muhammad Zafran"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_picture_image_view"
+        android:text="Item"
+        android:id="@+id/item_title_text_view"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/item_desc_text_view"
+        android:layout_below="@id/item_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nasi Goreng"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_below="@id/item_desc_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_title_text_view"
+        android:text="Price"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_below="@id/price_title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_desc_text_view"
+        android:text="RM 2.00"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/time_elapsed_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/price_desc_text_view"
+        android:layout_marginTop="20dp"
+        android:text="Time Elapsed"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/time_elapsed_desc_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_elapsed_text_view"
+        android:layout_marginTop="5dp"
+        android:text="2 minutes"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/status_title_text_view"
+        android:layout_below="@id/time_elapsed_desc_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="Progress"/>
+
+    <LinearLayout
+        android:layout_below="@id/status_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+       <ImageButton
+           android:id="@+id/reverse_progress_button"
+           android:layout_gravity="left"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/arrow_left"
+           android:layout_marginRight="40dp"
+           />
+
+        <TextView
+            android:id="@+id/progress_text_view"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="preparing"/>
+        <ImageButton
+            android:id="@+id/forward_progress_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/arrow_right"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

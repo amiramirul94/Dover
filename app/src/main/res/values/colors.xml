@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CC5803</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FFAFB42B</color>
+    <color name="main_background">#E5E5E5</color>
+    <color name="recycler_view_color">#FFFFFF</color>
+    <color name="recycler_view_selected">#EEEEEE</color>
+    <color name="button_color">#0A369D</color>
+    <color name="white">#ffffff</color>
+    <color name="button_color_pressed">#006494</color>
+    <color name="button_submit_normal">#1E88E5</color>
+    <color name="button_submit_pressed">#1565C0</color>
+    <color name="button_cancel_normal">#F44336</color>
+    <color name="button_cancel_pressed">#B71C1C</color>
+    <color name="material_orange">#FFA726</color>
+    <color name="dark_green">#1B5E20</color>
+    <color name="light_green">#388E3C</color>
+
+
+</resources>

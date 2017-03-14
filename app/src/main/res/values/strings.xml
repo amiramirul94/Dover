@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">Dover</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ok">OK</string>
+    <string name="action_settings">Settings</string>
+    <string name="company_trademark">Making Food Faster</string>
+    <string name="itemDescription">Order</string>
+    <string name="track_order">Track</string>
+    <string name="runner">Dispatch</string>
+    <string name="billing">Billing</string>
+    <string name="settings">Settings</string>
+    <string name="title_activity_select_food">SelectFoodActivity</string>
+    <string name="done">Done</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="subtitle_num_order_single">%1$s item</string>
+    <string name="subtitle_num_order_multiple">%1$s items</string>
+    <string name="title_activity_order_submit_activity">order_submit_activity</string>
+    <string name="title_activity_confirmation">ConfirmationActivity</string>
+    <string name="title_activity_submit">SubmitActivity</string>
+    <string name="order_confirmation">Your itemDescription have been received by %1$s</string>
+    <string name="awaiting_for_accept">Now awaiting for approval by the store</string>
+    <string name="track_item_one">%1$s from %2$s</string>
+    <string name="track_item_two">%1$s and 1 other from %2$s</string>
+    <string name="track_item_more">%1$s and %2$d others from %3$s</string>
+    <string name="distance_in_metres">%.2f m</string>
+    <string name="distance_in_km">%.2f km</string>
+    <string name="title_activity_track_info">TrackInfoActivity</string>
+    <string name="go_online">GO ONLINE</string>
+    <string name="dover_needs_you">Dover needs you!!!</string>
+    <string name="earn_money_as_a_dispatcher">Earn money as a runner now</string>
+    <string name="title_activity_dispatch">DispatchActivity</string>
+    <string name="title_activity_dispatch_list">DispatchListActivity</string>
+    <string name="title_activity_dispatch_order_status">DispatchOrderStatusActivity</string>
+    <string name="title_activity_dispatch_map">DispatchMapActivity</string>
+    <string name="title_activity_restaurant">Dishpatch</string>
+    <string name="title_activity_restaurant_manage_order">RestaurantManageOrderActivity</string>
+    <string name="customer">Customer</string>
+    <string name="store">Grocery Store</string>
+    <string name="login">Login</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="register">register</string>
+    <string name="email">email</string>
+    <string name="restaurant_name">Restaurant Name</string>
+    <string name="location">Set Location</string>
+    <string name="confirm_loc">Location confirmation</string>
+    <string name="make_sure">Make sure you are at your store before setting the location.</string>
+    <string name="internet_not_available">No Internet Connection</string>
+    <string name="delete_food">Delete Food</string>
+    <string name="confirm_delete">Are sure you want to delete this itemName from item?</string>
+    <string name="confirmation_delete_title">Confirm Delete</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_customer">CustomerActivity</string>
+    <string name="clear_search">Clear Search</string>
+    <string name="search">Search</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="existing_or_new">New image or current image</string>
+
+    <string-array name="grocery_type">
+        <item>Other</item>
+        <item>Beverages</item>
+        <item>Bread/Bakery</item>
+        <item>Canned/Cared Goods</item>
+        <item>Dairy</item>
+        <item>Baking</item>
+        <item>Frozen Foods</item>
+        <item>Meat</item>
+        <item>Fruit/Vegetables</item>
+        <item>Cleaners</item>
+        <item>Paper Goods</item>
+        <item>Personal Care</item>
+    </string-array>
+
+
+    <string-array name="select_grocery_type">
+        <item>All</item>
+        <item>Beverages</item>
+        <item>Bread/Bakery</item>
+        <item>Canned/Cared Goods</item>
+        <item>Dairy</item>
+        <item>Baking</item>
+        <item>Frozen Foods</item>
+        <item>Meat</item>
+        <item>Fruit/Vegetables</item>
+        <item>Cleaners</item>
+        <item>Paper Goods</item>
+        <item>Personal Care</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="weight_unit">
+        <item>g</item>
+        <item>Kg</item>
+        <item>Oz</item>
+        <item>L</item>
+        <item>ml</item>
+    </string-array>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value"/>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+</resources>

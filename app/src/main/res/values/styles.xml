@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/main_background</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    
+    <style name="done_button" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/button_color</item>
+        <item name="colorButtonNormal">@color/button_color_pressed</item>
+    </style>
+
+    <style name="blue_button" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/button_submit_pressed</item>
+        <item name="colorButtonNormal">@color/button_submit_normal</item>
+    </style>
+
+    <style name="red_button" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/button_cancel_pressed</item>
+        <item name="colorButtonNormal">@color/button_cancel_normal</item>
+    </style>
+
+    <style name="green_button" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/button_cancel_pressed</item>
+        <item name="colorButtonNormal">@color/button_cancel_normal</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_dover</item>
+    </style>
+
+
+</resources>

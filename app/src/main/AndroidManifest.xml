@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.android.dishpatch.dover"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".DishpatchApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_dover"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyC-Mq13qExZlJPd2VM68xSBebHnQ6x7TIA"/>
+
+
+        <activity
+            android:name=".ui.Activity.SelectItemActivity"
+            android:label="@string/title_activity_select_food"
+            android:parentActivityName=".ui.Activity.CustomerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.dishpatch.dover.ui.Activity.OrderActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.Activity.ConfirmationActivity"
+            android:label="@string/title_activity_confirmation"
+            android:parentActivityName=".ui.Activity.SelectItemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.dishpatch.dover.ui.Activity.SelectItemActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.Activity.SubmitActivity"
+            android:label="@string/title_activity_submit"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.Activity.TrackInfoActivity"
+            android:label="@string/title_activity_track_info"
+            android:parentActivityName=".ui.Activity.CustomerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.Activity.DispatchActivity"
+            android:label="@string/title_activity_dispatch"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.Activity.DispatchListActivity"
+            android:label="@string/title_activity_dispatch_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".ui.Activity.DispatchOrderStatusActivity"
+            android:label="@string/title_activity_dispatch_order_status"
+            android:parentActivityName=".ui.Activity.DispatchListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.dishpatch.dover.ui.Activity.DispatchListActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.Activity.DispatchMapActivity"
+            android:label="@string/title_activity_dispatch_map"
+            android:parentActivityName=".ui.Activity.DispatchOrderStatusActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.dishpatch.dover.ui.Activity.DispatchOrderStatusActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.Activity.RestaurantManageOrderActivity"
+            android:label="@string/title_activity_restaurant_manage_order"
+            android:parentActivityName=".ui.Activity.StoreActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.dishpatch.dover.ui.Activity.StoreActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.Activity.MainActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.Activity.UserLoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.Activity.UserRegistrationActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.Activity.RestaurantLoginActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.Activity.StoreRegistrationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ui.Activity.StoreEditItemActivity"
+            android:parentActivityName=".ui.Activity.StoreActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.android.dishpatch.dover.ui.Activity.StoreActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.Activity.StoreActivity"
+            android:label="@string/title_activity_restaurant"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <service android:name=".Service.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".Service.InstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.Activity.CustomerActivity"
+            android:label="@string/title_activity_customer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <service android:name=".Service.SubmitOrderService"/>
+        <service android:name=".Service.DispatchLocationServices"/>
+
+        <receiver android:name=".BroadcastReceiver.DishpatchBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.Activity.OrderInfoActivity"
+            android:parentActivityName=".ui.Activity.CustomerActivity">
+        </activity>
+        <activity
+            android:name=".ui.Activity.ViewItemsActivity"
+            android:parentActivityName=".ui.Activity.OrderInfoActivity">
+        </activity>
+        <activity
+            android:name=".ui.Activity.CustomerSettingsActivity"
+            android:parentActivityName=".ui.Activity.CustomerActivity">
+        </activity>
+        <activity
+            android:name=".ui.Activity.StoreSettingsActivity"
+            android:parentActivityName=".ui.Activity.StoreActivity">
+        </activity>
+        <activity android:name=".ui.Activity.RunnerShoppingListActivity"
+            android:parentActivityName=".ui.Activity.DispatchOrderStatusActivity">
+        </activity>
+    </application>
+
+</manifest>

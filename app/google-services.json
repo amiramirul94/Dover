@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "74587261577",
+    "firebase_url": "https://dover-fd9a6.firebaseio.com",
+    "project_id": "dover-fd9a6",
+    "storage_bucket": "dover-fd9a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74587261577:android:3b26dc571ae25885",
+        "android_client_info": {
+          "package_name": "com.android.dover.dover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74587261577-8ponhqvfan5uht5kf3l5mgknpt7ahliv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT8im4eNYruZpjbZn7zEdk2etrG-klkjE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

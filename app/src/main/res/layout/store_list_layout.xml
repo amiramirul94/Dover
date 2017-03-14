@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/restaurant_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="5dp"
+        android:elevation="2dp"
+        android:background="@drawable/box_container_background_normal"
+      >
+
+    <ImageView
+        android:id="@+id/store_logo_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/restaurant"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/store_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/store_logo_image_view"
+        android:layout_centerHorizontal="true"
+        tools:text="Mak Ngah Cafe"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_below="@id/store_name_text_view"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/store_distance_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="10 km "
+                android:layout_weight="2"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/store_rating_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                tools:text="4.5"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
